@@ -18,12 +18,24 @@ public class HelloWorld {
         System.out.println("Choose from these choices");
         System.out.println("-------------------------\n");
         System.out.println("1 - Enter an original number");
-        System.out.println("2 - Encrypt a number");
-        System.out.println("3 - Decrypt a number");
-        System.out.println("4 - Quit");
-
+        System.out.println("2 - Say my name, say my name!");
+        System.out.println("3 - Quit");
+				
+				outer:
         selection = input.nextInt();
-        return selection;    
+        if (selection == 1) {
+				 selection = input.nextInt();
+				         System.out.println($input + " is such a cool number!");
+					return outer;
+				} 
+				if (selection == 2) {
+				        System.out.println("lol no");
+								return outer;
+
+				}
+				if (selection == 3) {
+				return;
+				}
     }
 	
 	
